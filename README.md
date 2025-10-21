@@ -8,12 +8,36 @@
 
 For the implementation of this project, the operating system used was **Windows 10**, the programming language was **Java**, and the main development tool was **IntelliJ IDEA 2025.1**. These tools provided a stable environment for coding, testing, and running the program, ensuring compatibility and efficiency during the implementation process.
 
-This **Java program** identifies equivalent states in a deterministic finite automaton (DFA). It uses standard Java libraries like `import java.util.*;` which are used for input handling (`Scanner`), collections (`List`, `Set`, `HashSet`), and stream processing.
+## Program Description
+
+This **Java program** implements the **General Algorithm for Eliminating Left Recursion** from a *Context-Free Grammar (CFG)*.  
+
+It uses standard Java libraries for:
+- **Input handling:** `Scanner`
+- **Collections management:** `Map`, `List`  
+
+These are used to efficiently store and process grammar productions.
+
+The program takes a **grammar as input** and produces an **equivalent grammar free of left recursion** — both **direct** and **indirect**.
 
 ---
 
 ## INSTRUCTIONS
 
+## 1. Download and Structure
+
+Make sure you have the following files located in the **same directory**:
+- `GrammarManager.java`
+- `LeftRecursionEliminator.java`
+
+---
+
+## 2. Compilation
+
+Open your **terminal** or **command prompt** in the project directory and compile both files:
+
+
+javac GrammarManager.java LeftRecursionEliminator.java
 
 
 ---
