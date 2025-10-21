@@ -27,8 +27,9 @@ The program takes a **grammar as input** and produces an **equivalent grammar fr
 ## 1. Download and Structure
 
 Make sure you have the following files located in the **same directory**:
-- `GrammarManager.java`
-- `LeftRecursionEliminator.java`
+- `EliminadorRecursion.java`
+- `Gramatica.java`
+- `Main.java`
 
 ---
 
@@ -37,7 +38,15 @@ Make sure you have the following files located in the **same directory**:
 Open your **terminal** or **command prompt** in the project directory and compile both files:
 
 
-javac GrammarManager.java LeftRecursionEliminator.java
+javac Gramatica.java EliminadorRecursivo.java Main.java
+
+## 3. Interactive Input
+
+The program will request the following information:
+
+- **Cases (n):** Total number of grammars to process.  
+- **Non-Terminals (k):** For each case, the number of initial productions.  
+- **Productions:** Enter each production in the format given by the input
 
 
 ---
@@ -65,7 +74,7 @@ This production must be **substituted**.
 
 **Action:**  
 The production containing **B** is replaced by all of **B**’s alternatives.  
-The NT **B** is substituted with all its productions (called *delta chains*).  
+The NT **B** is substituted with all its productions.  
 The resulting production for **A** becomes:  
 `A → δ γ`  
 (where **δ** represents one of **B**’s alternatives).
@@ -92,5 +101,7 @@ The original NT **A** is redefined to use the *beta chains* followed by the new 
 ## REFERENCES
 
 - **Aho, Alfred V. et al.** (2006). *Compilers: Principles, Techniques, and Tools (2nd Edition).* Addison-Wesley Longman Publishing Co., Inc. **(Section 4.3.3: Elimination of Left Recursion)**
+
+- https://www.youtube.com/watch?v=JsvC1mtE2nM
 These equivalent pairs are then printed as the output.
 
